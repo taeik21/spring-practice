@@ -2,10 +2,12 @@ package com.example.spring_practice.service;
 
 import com.example.spring_practice.domain.Member;
 import com.example.spring_practice.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
